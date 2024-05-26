@@ -1,0 +1,5 @@
+WEBVTT
+00:03.000 --> 00:05.000
+<v Alberto>
+	El fullstack development o desarrollo 
+	web es el arte de construir aplicaciones 

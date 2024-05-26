@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="ciudad">
+      <optgroup label="Europa">
+        <option>Madrid</option>
+        <option>Londres</option>
+        <option>Paris</option>
+        <option>Sevilla</option>
+      </optgroup>
+      <optgroup label="Suramerica">
+        <option>Santiago</option>
+        <option>Sao Paulo</option>
+        <option>Lima</option>
+        <option>Bogota</option>
+      </optgroup>
+      <optgroup label="Africa">
+        <option>Casablanca</option>
+        <option>Ciudad del Cabo</option>
+      </optgroup>
+    </select>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Campo de texto combinado con lista de opciones -->
+      <input type="text" list="items" />
+      <!-- Lista de opciones -->
+      <datalist id="items">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+        <option value="3">Opción 3</option>
+      </datalist>
+    </form>
+    <form name="formulario" method="post" action="./">
+      <!-- Selección de color -->
+      Selecciona el color deseado:
+      <input type="color" name="color" value="#FF0000" />
+      <input type="file" id="identificador" value="valor" name="nombre" />
+    </form>
+    <form>
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple />
+    </form>
+    <form action="/next-page" method="post">
+      <fieldset>
+        <legend>Datos Básicos</legend>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" value="Enviar!" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Datos del formulario -->
+      Usuario: <input type="text" name="usuario" />
+      <!-- Botón de envío de formulario con imagen -->
+      <input
+        type="image"
+        src="image.png"
+        alt="Enviar"
+        width="80"
+        height="28"
+      />
+      <button name="nombre" type="TipoBoton" value="ValorBoton">Botón</button>
+    </form>
+    <br/>
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Barra de progreso -->
+      <progress max="100" value="50">
+    </form>
+    
+    <form name="formulario2" method="post" action="/send.php">
+     <!--Medidor-->   
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple />
+      <meter min="0" max="100"
+             low="25" high="75"
+             optimum="100" value="10">
+    </form>
+    <br />
+   </body>
+</html>

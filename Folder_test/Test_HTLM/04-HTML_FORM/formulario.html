@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--<form name="mi formulario" action="/next-page" method="post"></form>-->
+    <form action="/action.php" target="_blank" accept-charset="utf-8">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form
+      action="/action.asp"
+      method="post"
+      novalidate
+      enctype="multipart/form-data"
+    >
+      <!--../-->
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form
+      action="../03-HTML_IMAGES/assets/images/environmental-pollution-industry-exterior-daylight.jpg"
+      method="get"
+      autocomplete="on"
+    >
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+    <!--
+    <input type="button" />
+    <input type="checkbox" />
+    <input type="color" />
+    <input type="date" />
+    <input type="datetime-local" />
+    <input type="email" />
+    <input type="file" />
+    <input type="hidden" />
+    <input type="image" />
+    <input type="month" />
+    <input type="number" />
+    <input type="password" />
+    <input type="radio" />
+    <input type="range" />
+    <input type="reset" />
+    <input type="search" />
+    <input type="submit" />
+    <input type="tel" />
+    <input type="text" /> (por defecto)
+    <input type="time" />
+    <input type="url" />
+    <input type="week" />-->
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" />
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" />
+    <input type="submit" value="Submit" />
+    <!--
+    <input type="email"> el teclado mostrará botones especiales como .com y @
+<input type="hidden">info que queremos enviar con el formulario pero que no 
+	se vea en la pantalla
+<input type="password"> no aparecerán los caracteres visibles al escribir.
+<input type="search"> para búsquedas
+<input type="tel"> tipo teléfono, desplegará teclado numérico
+<input type="text"> (por defecto)
+<input type="url">
+<textarea>-->
+    <input
+      type="text"
+      id="identificador"
+      size="tamaño"
+      name="nombre"
+      value="texto por defecto"
+    />
+    <input
+      type="text"
+      id="email"
+      name="email"
+      size="70"
+      value="usuario@dominio.com"
+    />
+    <br />
+    <input type="password" id="identificador" size="tamaño" name="nombre" />
+    <br />
+    <label>password</label>
+    <input type="password" name="password" id="clave" name="clave" size="20" />
+    <!--<label for="comments">Comentarios:</label>
+<textarea id="comments">Este será el contenido de los comentarios</textarea>-->
+    <br />
+    <form method="post" action="/user">
+      <label for="nick">nickName:</label>
+      <input
+        type="text"
+        name="nick"
+        placeholder="Su nick"
+        minlength="2"
+        maxlength="8"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+    <br />
+    <form method="post" action="/user">
+      <label for="age">Edad:</label>
+      <input
+        type="number"
+        size="100"
+        name="age"
+        placeholder="Su edad"
+        min="14"
+        max="99"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+    <br />
+    <form>
+      <label for="points">Points:</label>
+      <input type="number" id="points" name="points" step="5" />
+    </form>
+    <input type="date" />
+    <input type="datetime-local" />
+    <input type="month" />
+    <input type="time" />
+    <input type="week" />
+    <br />
+    <form name="formulario" method="post" action="/send.php">
+      <!-- Campo de entrada de fecha -->
+      Selecciona la fecha deseada:
+      <input
+        type="date"
+        name="fecha"
+        min="2034-03-25"
+        max="2038-05-25"
+        step="2"
+      />
+      <!-- Campo de entrada de hora -->
+      Selecciona la hora deseada:
+      <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+      <input type="button" value="TextoBotón" />
+      <input type="checkbox" id="identificador" name="nombre" />
+      <input
+        type="checkbox"
+        id="identificador"
+        name="nombre"
+        checked="checked"
+      />
+      <input type="checkbox" name="lenguaje" value="html" />HTML
+      <input type="checkbox" name="lenguaje" value="javascript" />Javascript
+      <input type="checkbox" name="lenguaje" value="css" />CSS
+      <input type="checkbox" name="lenguaje" value="xml" />XML
+      <br />
+      <input type="radio" id="identificador" value="valor" name="nombre" />
+      <input type="radio" id="menos18" value="menos18" name="edad" />Menos de 18
+      <input type="radio" id="18a30" value="18a30" name="edad" />18 a 30
+      <input type="radio" id="31a50" value="31a50" name="edad" />31 a 50
+      <input type="radio" id="mas50" value="mas50" name="edad" />Más de 50
+      <input
+        type="radio"
+        id="identificador"
+        value="valor"
+        name="nombre"
+        checked="checked"
+      />
+      <br />
+      <label for="avengers">Elige una opción:</label>
+
+      <select name="avengers" id="avengers">
+        <option value="thor">Thor</option>
+        <option value="hulk">Hulk</option>
+        <option value="ironman">Ironman</option>
+      </select>
+    </form>
+  </body>
+</html>
