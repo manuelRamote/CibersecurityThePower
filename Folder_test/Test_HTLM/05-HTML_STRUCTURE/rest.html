@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <>
+    <details>
+      <!--Crea un elemento desplegable, que contendrá todo el contenido. Actúa como un div, pero inicialmente no aparecerá desplegado--->
+      <summary>Más información</summary>
+      <h2>Nombre</h2>
+      <img src="foto.jpg" alt="Foto" />
+    </details>
+    <dialog id="alert">
+      <!---<summary>Título del elemento que se verá estando o no desplegado\\ <dialog>. Ventana de diálogo que puede contener y mostrar información. -->
+      <p>¡Hola!</p>
+      <button id="close" onclick="document.getElementById('alert').close()">
+        Ok!
+      </button>
+    </dialog>
+    <button id="show" onclick="document.getElementById('alert').show()">
+      Mostrar
+    </button>
+    <br />
+    <dialog id="gandalfModal">
+      <!-- Los modales son ventanas que aparecen en pantalla y que no se quitan hasta que el usuario realiza la acción que se le pide desde el modal.-->
+      <img src="gandalf.jpg" alt="Gandalf" />
+      <p>¡NO.. PUEDES... PASAR!</p>
+      <button
+        id="close"
+        onclick="document.getElementById('gandalfModal').close()"
+      >
+        Ok!
+      </button>
+    </dialog>
+    <button
+      id="show"
+      onclick="document.getElementById('gandalfModal').showModal()"
+    >
+      Mostrar
+    </button>
+    <br />
+    <h3 contenteditable>Título</h3>
+    <div contenteditable>
+      <p>Este es un párrafo modificable de ejemplo</p>
+    </div>
+    <br />
+    <script>
+      <!--Esta etiqueta sirve para cargar contenido Javascript en nuestro documento HTML-->
+      alert('¡Hola!')
+    </script>
+    <script src="/script.js"></script>
+    <!--Ejemplo de javascript externo-->
+    <script type="module">
+      /* Código para navegadores modernos */
+      import { pi } from './pi-module.js'
+    </script>
+    <script nomodule>
+      /* Código para navegadores antiguos */
+    </script>
+    <br />
+    <!--onLoad, que ocurrirá cuando la página cargue.-->
+    <img
+      style="width: 300px"
+      src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/
+    2022/10/18/16661071524623.jpg"
+      id="gandalfImage"
+      alt="Gandalf"
+    />
+    <p id="textId"></p>
+
+    <script>
+      document
+        .getElementById('gandalfImage')
+        .addEventListener('load', loadImage)
+      function loadImage() {
+        document.getElementById('textId').innerHTML = 'Image loaded'
+      }
+    </script>
+    <br/>
+    <!--onScroll, cuando se haga scroll en la página.-->
+    <textarea id="scrollExample">
+      HTML stands for Hyper Text Markup Language.
+    It is used to design web pages using markup language.
+    HTML is the combination of Hypertext and Markup language.
+    Hypertext defines the link between the web pages.
+    Markup language is used to define the text document
+    within tag which defines the structure of web pages.
+    HTML is a markup language which is used by the browser
+    to manipulate text, images and other content to
+    display it in required format.
+  </textarea
+    >
+
+    <p id="example"></p>
+
+    <script>
+      document
+        .getElementById('scrollExample')
+        .addEventListener('scroll', onScrollAction)
+
+      function onScrollAction() {
+        document.getElementById('example').innerHTML =
+          'Has hecho scroll en el textArea.'
+      }
+    </script>
+
+    <br/>
+    <!--onBlur, el elemento ha perdido foco.-->
+    <h2>onblur event example</h2>
+<input onblur="myFunction()">
+  
+<script>
+    function myFunction() {
+        alert('foco perdido!');
+    }
+</script>
+
+<br/>
+<!--onFocus, el elemento está en foco.-->
+<h2>onFocus event example</h2>
+<input onfocus="myFunction()">
+  
+<script>
+    function myFunction() {
+        alert('Estoy en foco!');
+    }
+</script>
+
+<!-- EJEMPLO DE ONCLICK QUE CUANDO HAGAMOS CLICK EN EL <p> 
+
+EL TEXTO SE CAMBIARÁ A ROJO -->
+
+<p id="example" onclick="myFunction()">Haz click para cambiarme de color.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("example").style.color = "red";
+}
+</script>
+  </body>
+</html>

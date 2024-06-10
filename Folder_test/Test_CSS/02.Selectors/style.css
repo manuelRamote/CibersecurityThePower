@@ -1,0 +1,15 @@
+.highlight {
+  font-style: italic;
+  color: crimson;
+}
+#best {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: crimson;
+}
+* {
+  /*Selector universal --> Se aplica a todos los elementos*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

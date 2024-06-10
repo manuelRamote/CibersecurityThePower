@@ -1,0 +1,36 @@
+<!DOCTYPE html>: Declaración doctype para especificar la versión de HTML utilizada (HTML5 en este caso).
+<html lang="es">: Etiqueta <html> con atributo lang para definir el idioma principal del documento como español.
+<head>: Sección de encabezado que contiene metadatos, enlaces a hojas de estilo y otros recursos.
+<meta charset="UTF-8">: Especifica la codificación de caracteres UTF-8 para admitir caracteres especiales en el idioma.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Configura la escala inicial y la anchura del dispositivo para la visualización en dispositivos móviles.
+<meta name="description" content="Descripción breve de Pinterest...">: Proporciona una descripción breve del sitio para fines de SEO.
+<meta name="keywords" content="pinterest, imágenes, compartir, tableros">: Define palabras clave relevantes para el sitio web.
+<title>Pinterest</title>: Define el título de la página que se muestra en la pestaña del navegador.
+<link rel="stylesheet" href="styles.css">: Enlaza una hoja de estilos externa (CSS) para dar formato al contenido.
+<link rel="canonical" href="https://pinterest.es/">: Especifica la URL canónica del documento para evitar contenido duplicado en motores de búsqueda.
+<body>: El cuerpo del documento HTML.
+<header>: La sección de encabezado del sitio web.
+<nav>: Define la navegación principal del sitio.
+<a href="/" class="logo">Pinterest</a>: Enlace que sirve como logotipo del sitio.
+<ul>: Lista no ordenada que contiene elementos de navegación.
+<li><a href="/explorar">Explorar</a></li>: Elementos de lista que son enlaces a diferentes secciones del sitio.
+<main>: La sección principal del contenido.
+<section id="destacados">: Una sección del sitio que contiene imágenes destacadas.
+<h1>Imágenes Destacadas</h1>: Un encabezado que describe el contenido de la sección.
+<article>: Define un artículo individual dentro de la sección.
+<a href="/imagen/123">: Enlace a una página de detalle de imagen.
+<img src="imagen1.jpg" alt="Descripción breve de la imagen" loading="lazy">: Imagen con un atributo alt descriptivo para la accesibilidad.
+<h2>Título de la imagen</h2>: Título de la imagen
+<p>Descripción de la imagen. Esta descripción ayuda al SEO y a la accesibilidad.</p>: Descripción de la imagen.
+<section id="categorias">: Otra sección que muestra categorías populares.
+<h1>Categorías Populares</h1>: Encabezado que describe las categorías.
+<ul>: Lista no ordenada que contiene elementos de categoría.
+<li><a href="/categoria/viajes">Viajes</a></li>: Elemento de lista que es un enlace a una categoría.
+Al utilizar loading="lazy", las imágenes se cargarán de manera diferida, lo que significa que no se cargarán hasta que el usuario se acerque a ellas mientras desplaza la página. 
+Esto reduce la carga inicial de la página y acelera el tiempo de carga inicial, lo que es especialmente beneficioso en dispositivos móviles y conexiones de Internet más lentas.
+<footer>: La sección de pie de página del sitio.
+<p>&copy; 2023 Pinterest. Todos los derechos reservados.</p>: Un párrafo que contiene información de derechos de autor.
+<script src="scripts.js"></script>: Enlace a un archivo JavaScript externo para la funcionalidad interactiva del sitio.
+El uso de elementos semánticos como <section>, <header>, <nav>, <ul>, <li>, y <footer> en HTML es fundamental para organizar y dar significado al contenido de una página web.
+Estos elementos proporcionan una estructura clara y jerárquica, mejoran la accesibilidad al permitir una navegación más sencilla para personas con discapacidad visual, y ayudan a los motores de búsqueda a comprender y clasificar el contenido. <header> se emplea para encabezados, <nav> para la navegación, <ul> y <li> para listas, <section> para secciones temáticas, y <footer> para pies de página. En conjunto, estos elementos contribuyen a una experiencia de usuario mejorada y a un código web más legible y organizado.
+
