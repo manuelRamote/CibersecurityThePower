@@ -1,0 +1,8 @@
+.color {
+  background-color: rgb(125 80 10);
+  background-color: rgb(55% 25% 75%);
+  background-color: rgb(0 0 0 / 50%); /* formato RGBA */
+}
+.color2 {
+  background-color: #2596be;
+}

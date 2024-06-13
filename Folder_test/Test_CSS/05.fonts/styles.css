@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'RobotoFontRegular';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.roboto_regular {
+  font-family: RobotoFontRegular;
+}
+
+/* Si importamos directamente desde google fonts 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+} */
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url('./assets/fonts/Roboto-Medium.ttf');
+  font-weight: Verdana;
+  font-style: sans-serif;
+}
+
+div {
+  font-family: RobotoMedium, 'PT Sans', Verdana, sans-serif;
+}
