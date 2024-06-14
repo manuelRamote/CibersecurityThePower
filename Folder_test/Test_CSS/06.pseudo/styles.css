@@ -1,0 +1,88 @@
+div:hover {
+  background-color: yellowgreen;
+  color: green;
+}
+input:read-only {
+  background-color: red;
+  color: blue;
+}
+.cita::before {
+  content: '<<';
+  color: coral;
+}
+.cita::after {
+  content: '>>';
+  color: coral;
+}
+
+.cita {
+  font-style: italic;
+}
+button:active {
+  color: orange;
+  font-weight: bold;
+}
+
+a:any-link {
+  color: crimson;
+  font-weight: bold;
+}
+input:checked + label {
+  color: crimson;
+}
+input:default + label {
+  color: green;
+}
+button:disabled {
+  color: red;
+}
+button:enabled {
+  color: green;
+}
+
+li:first-child {
+  color: crimson;
+}
+li:last-child {
+  color: crimson;
+}
+input:focus {
+  background-color: burlywood;
+}
+input:invalid {
+  background-color: crimson;
+}
+a:link {
+  color: red;
+}
+main :not(h2) {
+  color: orange;
+}
+li:nth-child(3n) {
+  color: orange;
+}
+li:nth-last-child(3n) {
+  color: orange;
+}
+input:required::placeholder {
+  color: crimson;
+}
+input {
+  width: 100%;
+}
+:root {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  --primary: crimson;
+  --secondary: red;
+  --background: grey;
+  --border-radius: 1.2rem;
+}
+h2::first-letter {
+  font-size: 300%;
+}
+p::first-line {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: orange;
+}
