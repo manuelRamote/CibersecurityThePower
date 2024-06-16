@@ -1,0 +1,30 @@
+/*Para declarar custom properties (variables) usaremos un nombre que comience con dos guiones (-), y un valor que puede ser cualquier valor válido de CSS.*/
+elemento {
+  --main-bg-color: red;
+}
+/*Lo correcto sería declarar las variables globales de nuestra aplicación en un ámbito o scope global, para poder acceder a ellas desde cualquier punto.
+Esto se consigue con la pseudo-clase :root*/
+:root {
+  --main-bg-color: red;
+}
+/*Ahora podremos acceder a esta custom property desde cualquier lugar de la app, como por ejemplo en los <p> de la aplicación:*/
+p {
+  background-color: var(--main-bg-color);
+}
+/* es conveniente añadir un valor de la propiedad por defecto por si la variable desapareciese o no fuese accesible desde nuestro scope.*/
+p {
+  background: var(--background-color, red);
+}
+/*Ejemplo*/
+.parent {
+  --background-color: red;
+  color: white;
+}
+
+.first {
+  --background-color: lightblue;
+}
+
+.child {
+  background: var(--background-color, violet);
+}

@@ -1,0 +1,53 @@
+div {
+  /* Ponemos un alto mínimo, por defecto es 0 */
+  min-height: 200px;
+  /* Dibujamos un borde para ver límites */
+  border: 2px solid black;
+}
+
+#header,
+#page,
+#footer {
+  background: grey;
+}
+
+#menu,
+#content {
+  /* Necesario para que los elementos estén en horizontal */
+  display: inline-block;
+}
+
+#menu {
+  background: blue;
+  width: 30%;
+}
+
+#content {
+  background: lightgrey;
+  width: 70%;
+}
+/*uno de los cuadros se va hacia abajo en lugar de hacia al lado, para solucionarlo*/
+/* Eliminamos este bloque */
+#menu,
+#content {
+  display: inline-block;
+}
+
+/* Añadimos este */
+#page {
+  display: flex;
+}
+.picture {
+  min-height: 200px; /* Por defecto, height es 0 */
+  background: grey; /* Simplemente, para verlo visualmente */
+
+  max-width: 1024px;
+  min-width: 800px;
+}
+img,
+video,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}

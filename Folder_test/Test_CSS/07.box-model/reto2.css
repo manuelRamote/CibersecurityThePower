@@ -1,0 +1,43 @@
+/*Requisitos:
+
+- Cada opción del menú debe ser un enlace (<a>).
+
+El menú debe tener un margen superior e inferior de 30px y un margen izquierdo y derecho de 0px.
+
+- Cada opción del menú debe tener un padding de 10px en todos los lados.
+
+- Cada opción del menú debe tener un borde derecho de 2px de grosor y de color a tu elección, excepto la última opción.
+
+- Al pasar el cursor sobre una opción del menú, el fondo de esa opción debe cambiar de color.
+
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  margin: 30px 0; /* Margen superior e inferior de 30px, izquierdo y derecho de 0px */
+}
+
+.nav-item {
+  padding: 10px; /* Padding de 10px en todos los lados */
+  text-decoration: none;
+  color: #333;
+  border-right: 2px solid #3498db; /* Borde derecho de 2px */
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:last-child {
+  border-right: none; /* Sin borde derecho en la última opción */
+}
+
+.nav-item:hover {
+  background-color: #ddd; /* Cambio de color de fondo al pasar el cursor */
+}

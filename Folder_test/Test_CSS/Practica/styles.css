@@ -1,0 +1,94 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #9ad79b;
+}
+/*border y padding se aplican para dar al encabezado un borde punteado y espacio interno.
+
+position: fixed se usa para fijar el encabezado en la parte superior de la ventana del navegador, permitiendo que se mantenga visible mientras se desplaza la página.
+
+top: 0 y left: 0 aseguran que el encabezado esté anclado en la esquina superior izquierda.
+
+width: 100% asegura que el encabezado ocupe todo el ancho de la pantalla, ya que con las propiedad position se puede alterar el comportamiento por defecto.
+*/
+header {
+  border: 1px dashed #9ad79b;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+}
+/*position: relative se usa para asegurar que el contenido principal fluya en el flujo normal del documento y no se superponga con el encabezado fijo.
+
+padding se aplica para agregar espacio interno al contenido principal.
+
+margin-top se utiliza para separar el contenido principal del encabezado fijo, garantizando que no haya superposición.
+*/
+main {
+  position: relative;
+  padding: 20px;
+  margin-top: 80px;
+}
+/*position: absolute se utiliza para posicionar la barra lateral de manera absoluta en relación con su elemento padre más cercano que tenga una posición distinta de static.
+
+right y top se usan para colocar la barra lateral en la esquina superior derecha del contenido principal.
+
+Se aplican border y padding para estilizar la barra lateral.
+*/
+.sidebar {
+  position: absolute;
+  right: 20px;
+  top: 10px; /* Alineado con header */
+  border: 1px dashed #9ad79b;
+  padding: 20px;
+}
+/*position: relative permite que las características sigan fluyendo en el flujo normal del documento. De esta forma seguirán el rumbo natural desde este punto a nivel de colocación.
+
+margin-top se utiliza para separar las características del contenido anterior, asegurando que haya suficiente espacio.
+
+padding se aplica para agregar espacio interno a la sección de características.
+
+text-align: center se utiliza para centrar el texto dentro de la sección.
+
+Se aplican border y padding para estilizar la sección de características.
+*/
+
+.features {
+  position: relative;
+  margin-top: 30vh; /* Utiliza margin-top para separar del contenido anterior */
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed #9ad79b;
+}
+
+/*position: absolute se utiliza para posicionar el pie de página en la parte inferior de la ventana del navegador.
+
+bottom coloca el pie de página a una distancia de 20px desde la parte inferior de la ventana.
+
+width: 100% asegura que el pie de página ocupe todo el ancho de la pantalla.
+
+text-align: center se aplica para centrar el texto dentro del pie de página.
+
+Se aplican border y padding para estilizar el pie de página.
+*/
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border: 1px dashed #9ad79b;
+  padding: 20px;
+}

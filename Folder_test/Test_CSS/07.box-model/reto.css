@@ -1,0 +1,54 @@
+/*Requisitos:
+
+- La tarjeta debe tener un margen de 50px para separarla de los bordes de la ventana del navegador.
+
+- La tarjeta debe tener un borde de 5px de grosor y de color a tu elección.
+
+- La imagen de perfil debe estar centrada en la tarjeta y tener un padding de 20px.
+
+- El nombre debe tener un padding superior e inferior de 10px y un padding izquierdo y derecho de 20px.
+
+- La descripción debe tener un padding de 20px.
+
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 5px solid #3498db; /* Puedes cambiar el color aquí */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 50px; /* Margen de 50px alrededor de la tarjeta */
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 20px; /* Padding de 20px para la imagen */
+}
+
+.profile-name {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 20px; /* Padding superior/inferior de 10px, izquierdo/derecho de 20px */
+}
+
+.profile-description {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  padding: 20px; /* Padding de 20px para la descripción */
+}

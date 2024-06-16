@@ -1,0 +1,36 @@
+.red {
+  background-color: red;
+  /* Se comporta con un tamaño fijo width: 800px;*/
+  width: 100%;
+  /*Maximo que puede ocupar en la pantalla max-width: 200px;*/
+}
+.menu {
+  background-color: aquamarine;
+  height: 200px;
+}
+/*edia queries (también denominadas MQ a veces) son un tipo de reglas de CSS que permiten crear un bloque de código que sólo se procesará en los dispositivos que cumplan los criterios especificados como condición.
+@media screen and (*condición*) {
+  /* reglas CSS */
+/* reglas CSS 
+}
+
+@media screen and not (*condición*) {
+  /* reglas CSS */
+/* reglas CSS 
+} */
+
+@media screen and (max-width: 640px) {
+  .menu {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  .menu {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    background-color: green;
+  }
+}

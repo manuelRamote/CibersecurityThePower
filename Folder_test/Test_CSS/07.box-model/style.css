@@ -1,0 +1,181 @@
+/* div {
+    width: 100px; Ancho del contenido 
+    height: 100px; /* Alto del contenido 
+    padding: 10px; /* Relleno de 10px alrededor del contenido 
+    border: 5px solid black; /* Borde de 5px de ancho y color negro 
+    margin: 20px; /* Margen de 20px alrededor del borde 
+} 
+Si aplicas este CSS a un div, el tamaño total del div (sin contar el margen) sería de 130px x 130px. Aquí está el desglose:
+
+100px (ancho del contenido)
+
++20px (10px de padding a la izquierda + 10px de padding a la derecha)
+
++10px (5px de borde a la izquierda + 5px de borde a la derecha)
+
+= 130px en total    
+*/
+
+.container-one {
+  width: 80%;
+  height: 100px;
+  background-color: coral;
+  margin: 20px 10px;
+  padding: 50px;
+  overflow-x: visible;
+}
+
+.content {
+  width: 500px;
+}
+
+.container-two {
+  width: 60%;
+  height: 200px;
+  background-color: yellowgreen;
+  margin: 50px 30px; /*50px arriba y abajo y 30px izq y der*/
+}
+
+.height-example {
+  width: 250px;
+  margin-bottom: 5px;
+  border: 3px solid #999999;
+}
+
+#lightblue {
+  height: 80px;
+  background-color: lightblue;
+}
+
+#blueviolet {
+  height: 40px;
+  background-color: blueviolet;
+}
+
+#parent {
+  height: 100px;
+  background-color: crimson;
+}
+
+#child {
+  height: 50%;
+  width: 75%;
+  background-color: goldenrod;
+}
+
+.overflow-visible {
+  height: 2em;
+  width: 12em;
+  border: 3px dotted orange;
+  margin-bottom: 100px;
+  overflow: visible; /* dibuja barras si es necesario */
+}
+
+.overflow-hidden {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: hidden; /* No Scroll*/
+}
+
+.overflow-scroll {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: scroll; /* Scroll */
+}
+
+.overflow-auto {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: auto; /* auto */
+}
+
+div {
+  width: 250px;
+  height: 75px;
+  padding: 25px;
+  border: 5px solid black;
+  background: lightblue;
+}
+
+.content-box {
+  box-sizing: content-box;
+  /* Ancho  total: 250px + (2 * 25px) + (2 * 5px) = 310px
+     Altura total: 75px + (2 * 25px) + (2 * 5px) = 135px
+     Ancho de la caja de contenido: 250px
+     Altura de la caja de contenido: 75px */
+}
+
+.border-box {
+  box-sizing: border-box;
+  /* Ancho total: 250px
+     Altura total: 75px
+     Ancho de la caja de contenido: 250px - (2 * 25px) - (2 * 5px) = 190px
+     Altura de la caja de contenido: 75px - (2 * 25px) - (2 * 5px) = 10px */
+}
+
+.margin-example {
+  width: 800px;
+  margin: auto;
+  height: 100;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+.padding-example {
+  width: 800px;
+  margin: auto;
+  height: 100;
+  padding: 20px;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+.margin-posibility {
+  width: 200px;
+  margin: auto;
+  padding: 10px /*// 10px 5px // 10px 5px 8px // 10px 5px 8px 2px;*/;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+div {
+  border-color: red;
+  border-width: 5px;
+  /*border-style: dotted;
+*/
+  border-style: solid;
+}
+
+div {
+  border: 2px solid blue;
+  border-radius: 8px;
+}
+.element {
+  box-shadow: 10px 10px;
+}
+/* Desplazamientos izquierda y arriba, ponemos valores negativos*/
+.element {
+  box-shadow: -5px -5px;
+}
+.element {
+  box-shadow: 5px 5px 0; /* Sombra sin desenfoque */
+  box-shadow: 5px 5px 2px; /* Sombra con ligero desenfoque */
+  box-shadow: 5px 5px 10px; /* Sombra desenfocada */
+  box-shadow: 5px 5px 40px; /* Sombra con un desenfoque casi disipado */
+}
+.element {
+  box-shadow: 0 0 10px 5px;
+}
+.element {
+  /* Sombra exterior que se desplaza hacia la zona inferior-derecha */
+  box-shadow: 10px 10px 5px black;
+
+  /* Sombra interior que se desplaza hacia la zona inferior-derecha */
+  box-shadow: -10px -10px 5px black inset;
+}
+.shadow-example {
+  box-shadow: 10px 10px 5px black;
+  width: 500px;
+  margin: auto;
+  height: 100%;
+}

@@ -1,0 +1,98 @@
+/* div {
+  width: 100px;
+  height: 100px;
+}
+
+.relative {
+  position: relative;
+  left: 100px;
+  background-color: coral;
+}
+.absolute {
+  position: absolute;
+  left: 50px;
+  background-color: yellow;
+}
+
+.contenedor {
+  height: 1000px;
+  width: 100%;
+  background-color: chocolate;
+}
+.box-one {
+  height: 150px;
+  width: 150px;
+  background-color: skyblue;
+  position: fixed;
+  margin: 0px;
+  top: 100px;
+  left: 200px;
+} */
+.index-zero {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  width: 500px;
+  background-color: yellow;
+}
+.index-zero > .index-primary {
+  position: relative;
+  top: 60px;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  opacity: 0.7;
+}
+
+.index-zero .index-secondary {
+  position: absolute;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+  background-color: teal;
+  opacity: 0.5;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  color: whitesmoke;
+}
+
+#two {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  background: red;
+}
+.amarillo {
+  z-index: 0;
+}
+.rojo {
+  z-index: 1;
+  width: 100px;
+  height: 20px;
+  background-color: red;
+}
+.gris {
+  z-index: 2;
+}
+.verde {
+  z-index: 3;
+  position: relative;
+  bottom: 15px;
+  left: 40px;
+  width: 100px;
+  height: 20px;
+  background-color: green;
+}
+.azul {
+  z-index: 100;
+}
