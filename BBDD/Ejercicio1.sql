@@ -1,3 +1,4 @@
+/*dataanalyticsthepower@gmail.com*/
 /*1. Crear una tabla llamada "Clientes" con las columnas: id (entero, clave primaria), nombre (texto) y email (texto). */
 CREATE TABLE Clientes (
     id INT PRIMARY KEY,
